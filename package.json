@@ -1,0 +1,35 @@
+{
+  "name": "replica",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajagatobby/grokbot-landing-page.git"
+  },
+  "homepage": "https://grokbot-landing.mecurylab.workers.dev",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "deploy": "npm run build && rm -f dist/media/launch-trailer.mp4 && wrangler deploy"
+  },
+  "dependencies": {
+    "@rive-app/react-canvas": "^4.33.0",
+    "motion": "^13.1.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.1.0",
+    "oxlint": "^1.79.0",
+    "parse5": "^8.0.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.2",
+    "wrangler": "^4.127.1"
+  }
+}
